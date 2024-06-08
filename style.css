@@ -1,0 +1,178 @@
+:root {
+    --Purple: hsl(259, 100%, 65%);
+ --Light-red: hsl(0, 100%, 67%);
+--White: hsl(0, 0%, 100%);
+ --Off-white: hsl(0, 0%, 94%);
+ --Light-grey: hsl(0, 0%, 86%);
+ --Smokey-grey: hsl(0, 1%, 44%);
+ --Off-black: hsl(0, 0%, 8%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'poppins' , sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-weight: 400;
+    background-color: var(--Off-white);
+}
+
+.card {
+    background-color: var(--White);
+    width: 600px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem 1rem 10rem 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_container {
+    display: flex;
+    justify-self: flex-stat;
+}
+
+input {
+   border: 1px solid var(--Off-white); 
+   width: 100px;
+   padding: .5rem;
+   font-size: 1rem;
+   border-radius: 5px;
+   color: var(--Off-black);
+   
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+input:focus {
+    background-color:aliceblue;
+    
+}
+
+label {
+    text-transform: uppercase;  
+    color: var(--Smokey-grey);
+    letter-spacing: 3px;
+    font-size: 8px;
+    margin-bottom: 5px;
+  }
+  
+  .input_container {
+      display: flex;
+      flex-direction: column;
+      width: 150px;
+  }
+
+.container_btn{
+    display: flex;
+    align-items: center;
+}
+
+hr {
+    height: .1rem;
+    width: 100%;
+    background-color: var(--Off-white);
+    border: none;
+}
+
+.container_btn button {
+    border-radius: 100%;
+    background-color: var(--Purple);
+    padding: 1rem;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_btn button:hover {
+    background-color:var(--Off-black) ;
+}
+
+.age {
+    display: flex;
+    flex-direction: column;
+}
+
+.age .dash {
+    color:var(--Purple) ;
+}
+
+.age h1 {
+    font-weight:800 ;
+    font-size: 50px;
+}
+
+small {
+    color:var(--Light-red) ;
+    font-size: .7rem;
+    font-style: italic;
+}
+
+.error {
+    border: 1px solid var(--Light-red);
+}
+
+.error:focus {
+    border: 1px solid var(--Light-red);
+}
+
+.error-text {
+    color: var(--Light-red);
+}
+
+@media  screen and (max-width: 600px) {
+    .card {
+        width: 375px;
+        padding: 1rem;
+        border-radius: 1rem 1rem 7rem 1rem ;
+    }
+  input {
+    width: 70px; 
+  }  
+
+
+.container {
+    gap:0 ;
+    justify-content: space-between;
+}
+
+.container_btn {
+    margin: 4rem 0;
+    position: relative;
+}
+
+.container_btn button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+}
+
+.age h1 {
+    font-size: 50px;
+}
+
+}
+
+.attribution {
+    width: 300px;
+    font-weight: lighter;
+    font-size: 8px;
+    margin-top: 60px;
+}

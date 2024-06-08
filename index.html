@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="card">
+    <form class="container" action="">
+      <div class="form_container">
+        <div class="input_container">
+  <label id="label_day" for="day">Day</label>
+ <input type="number" id="day" name="day" placeholder="DD"> 
+ <small id="smallDay"></small>
+</div>
+
+<div class="input_container">
+ <label id="label_month" for="month">Month</label>
+ <input type="number"  id="month" name="month" placeholder="MM"> 
+ <small id="smallMonth"></small>
+</div>
+
+<div class="input_container">
+ <label id="label_year" for="year">year</label>
+ <input type="number" id="year" name="year" placeholder="YYYY"> 
+ <small id="smallYear"></small>
+</div>
+
+</div>
+ <div class="container_btn">
+<hr> 
+<button type="submit" id="sbt_btn"><img src="assets/images/icon-arrow.svg" alt="enter-button"></button>
+ </div>
+
+ 
+</form>
+
+<div class="age">
+ <h1 class="YYYY"><span id="years" class="dash"> - -</span> years</h1>
+ <h1 class="MM"><span id="months" class="dash">- -</span>  months </h1> 
+ <h1 class="DD"><span id="days" class="dash">- -</span>  days </h1>
+  </div>
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Motunrayo</a>.
+  </div>
+
+</main>
+
+<script src="index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
